@@ -8,8 +8,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:px;
-    max-width: 1200px;
+    max-width: 100vw;
     margin: 0px auto;
 }
 
@@ -61,14 +60,25 @@ p.name{
 .tags{
     line-height: 6px;
 }
-tr input{
-    padding: 5px;
-    width: 40px;
 }
+table{
+    /* border: 1px solid; */
+    width: 100%;
+
+    input{
+        width: 40px;
+    }
 }
+/* media query */
 @media screen and (min-width:0px) {
     .container{
         display: block;
+        margin: 0px 50px;
+    }
+
+    table{
+        width: 50%;
+        border: 1px solid;
         margin: 0px auto;
     }
 }
