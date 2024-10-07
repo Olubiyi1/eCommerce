@@ -1,0 +1,72 @@
+
+
+body{
+    font-family: 'Red Hat Text';
+    margin: 0px;
+    padding: 0px;
+    height: 100vw;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+h1{
+    grid-column: span 3;
+}
+
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+
+.waffle{
+    position: relative;
+}
+
+.cart{
+    border: 1px solid rgb(137, 99, 99);
+    padding: 10px 20px;
+    border-radius:15px;
+    position: absolute;
+    background-color: white;
+    bottom:70px;
+    left:100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    /* margin: auto 0px; */
+
+    img{
+        width: 15px;
+        margin: auto 10px;
+    }
+}
+p.name{
+    /* border: 1px solid; */
+    color: rgb(172, 171, 170);
+}
+
+.price::before{
+    content: "$";
+}
+.price{
+    /* line-height: -0px; */
+    margin-top: 0px;
+    color: rgb(204, 63, 63);
+    font-weight: bold;
+}
+.description{
+    font-weight: bold;
+}
+.tags{
+    line-height: 6px;
+}
+tr input{
+    padding: 5px;
+    width: 40px;
+}
+
