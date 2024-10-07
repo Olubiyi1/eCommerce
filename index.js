@@ -48,7 +48,7 @@ function addToCart(event){
     // // looping thru the qty of each item
     for(let i=0 ;i < qty.length; i++){
         qty[i].addEventListener("click",updateTotal)
-        console.log(qty)
+
     }
     
     grandTotal()

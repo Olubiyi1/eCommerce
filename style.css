@@ -1,5 +1,4 @@
 
-
 body{
     font-family: 'Red Hat Text';
     margin: 0px;
@@ -9,23 +8,22 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap:px;
+    max-width: 1200px;
+    margin: 0px auto;
 }
 
 h1{
     grid-column: span 3;
 }
 
-
 img{
-    max-width: 100%;
+    max-width: 350px;
     border-radius: 10px;
-
 }
 
-.waffle{
+.img{
     position: relative;
-}
 
 .cart{
     border: 1px solid rgb(137, 99, 99);
@@ -41,12 +39,11 @@ img{
     /* margin: auto 0px; */
 
     img{
-        width: 15px;
+    
         margin: auto 10px;
     }
 }
 p.name{
-    /* border: 1px solid; */
     color: rgb(172, 171, 170);
 }
 
@@ -54,7 +51,6 @@ p.name{
     content: "$";
 }
 .price{
-    /* line-height: -0px; */
     margin-top: 0px;
     color: rgb(204, 63, 63);
     font-weight: bold;
@@ -68,5 +64,18 @@ p.name{
 tr input{
     padding: 5px;
     width: 40px;
+}
+}
+@media screen and (min-width:0px) {
+    .container{
+        display: block;
+        margin: 0px auto;
+    }
+}
+@media screen and (min-width:750px) {
+    .container{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
